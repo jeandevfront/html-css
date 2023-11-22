@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #735CDD, #061A40);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background-color: #fff;
+    width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #030f24bb;
+}
+
+h1{
+    color: #550C18;
+    text-align: center;
+    text-shadow: 1px 1px 2px #410a13ee;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2{
+    color: #061A40;
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    text-align: justify;
+}

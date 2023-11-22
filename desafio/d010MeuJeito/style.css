@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+body{
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    background: linear-gradient(180deg, rgba(59,210,127,1) 35%, rgba(26,92,56,1) 100%);
+}
+
+header>h1{
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+header>p{
+    width: 26em;
+    margin: auto;
+    color: #c0f0d4;
+    text-align: center;
+}
+
+header nav .navi{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin: 0;
+}
+
+.navi a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navi a:hover{
+    text-decoration: underline;
+}
+
+.content {
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.384);
+    padding: 10px;
+}
+
+.final{
+    border-radius: 0 0 10px 10px;
+}
+
+main{
+    background-color:#84E1AD ;
+    padding: 0 200px;
+    margin-bottom: 10px;
+
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+}
+
+section >p {
+    text-align: justify;
+    text-indent: 15px;
+}
+
+section > h2{
+    font-family: 'Idroid', sans-serif;
+    color: #2F6C4B;
+    padding-top: 10px;
+    margin: 0;
+}
+
+section > h3{
+    font-family: 'Idroid', sans-serif;
+    background: linear-gradient(80deg, rgba(198,235,215,1) 35%, rgba(255,255,255,1) 100%);
+    color: #2F6C4B;
+    padding-left: 8px;
+}
+
+section picture > img{
+    width: 100%;
+}
+
+.content .image{
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    background-color: #1A5C38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
+}
+
+.video > iframe{
+    width: 90%;
+    height: 92%;
+}
+
+.extra{
+    background-color: #C5EBD6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.377);
+}
+
+.extra p{
+    text-align: justify;
+    padding: 20px;
+    margin: 0;
+}
+
+.extraTitle{
+    background-color: #2FA866;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    padding: 10px;
+}
+
+.extraLista{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20em;
+    width: 100%;
+}
+
+.extraLista li::before{
+    content: '\2713';
+    color: black;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+footer>p{
+    text-align: center;
+    color: #89e7b3;
+    background-color: #1A5C38;
+    margin: 0;
+    padding: 8px;
+}
+
+footer p > a, span{
+    color: #fff;
+    text-decoration: none;
+}
