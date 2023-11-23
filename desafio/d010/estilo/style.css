@@ -7,7 +7,7 @@
     src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
-
+ 
 :root{
     --cor1: #c5ebd6;
     --cor2: #83e1ad;
