@@ -1,0 +1,43 @@
+*{
+    font-family: 'Maven Pro', sans-serif;
+}
+
+hr {
+    width: 50%;
+    height: 1px;
+    background-color: #bd1a1a;
+    border: none;
+}
+
+img{
+    width: 20em; 
+    margin: 0;
+    background-image: linear-gradient(to top, white to black);
+}
+
+p{
+    width: 45%;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body{
+    background: url('imagens/wallpaper005.jpg') no-repeat;
+    background-size: 100% 600px;
+    position: absolute;
+    height: 100vh;
+}
+
+h2,h3{
+    position: relative;
+    right: 15%;
+    margin-top: 20px;
+    padding: 0;
+}
