@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -19,9 +20,30 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd){ /* odd(ímpar) = 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /* even(par) = 2n */
+            background-color: lightgray;
         }
 
         td.num{
@@ -34,6 +56,7 @@
 <!--
     ANATOMINA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -42,10 +65,11 @@
             TR, TD, TH
 -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -160,10 +184,35 @@
         </tbody>
         <thead>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </thead>
     </table>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum odit cum, rem suscipit ex earum facilis dignissimos autem sequi obcaecati assumenda nemo nulla sit quibusdam modi sed accusamus impedit. Assumenda.
+    Optio culpa molestias dignissimos reiciendis ipsam esse aspernatur ex dicta repudiandae, ratione incidunt fuga totam ut cupiditate? Recusandae ratione veritatis assumenda in, blanditiis est voluptatibus pariatur sequi eum ducimus vitae?
+    Accusamus voluptates, odit beatae dolor asperiores facilis et rerum quasi, iure id quo! In iure voluptatum deserunt explicabo non, itaque provident distinctio sapiente? Exercitationem, labore magnam vero nulla blanditiis officiis!
+    Impedit, nisi repudiandae veritatis dolores eos iste, explicabo, velit error animi totam omnis architecto veniam? Maxime distinctio amet expedita molestiae cum modi similique, aspernatur in debitis nesciunt ad nisi temporibus!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum odit cum, rem suscipit ex earum facilis dignissimos autem sequi obcaecati assumenda nemo nulla sit quibusdam modi sed accusamus impedit. Assumenda.
+    Optio culpa molestias dignissimos reiciendis ipsam esse aspernatur ex dicta repudiandae, ratione incidunt fuga totam ut cupiditate? Recusandae ratione veritatis assumenda in, blanditiis est voluptatibus pariatur sequi eum ducimus vitae?
+    Accusamus voluptates, odit beatae dolor asperiores facilis et rerum quasi, iure id quo! In iure voluptatum deserunt explicabo non, itaque provident distinctio sapiente? Exercitationem, labore magnam vero nulla blanditiis officiis!
+    Impedit, nisi repudiandae veritatis dolores eos iste, explicabo, velit error animi totam omnis architecto veniam? Maxime distinctio amet expedita molestiae cum modi similique, aspernatur in debitis nesciunt ad nisi temporibus!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum odit cum, rem suscipit ex earum facilis dignissimos autem sequi obcaecati assumenda nemo nulla sit quibusdam modi sed accusamus impedit. Assumenda.
+    Optio culpa molestias dignissimos reiciendis ipsam esse aspernatur ex dicta repudiandae, ratione incidunt fuga totam ut cupiditate? Recusandae ratione veritatis assumenda in, blanditiis est voluptatibus pariatur sequi eum ducimus vitae?
+    Accusamus voluptates, odit beatae dolor asperiores facilis et rerum quasi, iure id quo! In iure voluptatum deserunt explicabo non, itaque provident distinctio sapiente? Exercitationem, labore magnam vero nulla blanditiis officiis!
+    Impedit, nisi repudiandae veritatis dolores eos iste, explicabo, velit error animi totam omnis architecto veniam? Maxime distinctio amet expedita molestiae cum modi similique, aspernatur in debitis nesciunt ad nisi temporibus!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum odit cum, rem suscipit ex earum facilis dignissimos autem sequi obcaecati assumenda nemo nulla sit quibusdam modi sed accusamus impedit. Assumenda.
+    Optio culpa molestias dignissimos reiciendis ipsam esse aspernatur ex dicta repudiandae, ratione incidunt fuga totam ut cupiditate? Recusandae ratione veritatis assumenda in, blanditiis est voluptatibus pariatur sequi eum ducimus vitae?
+    Accusamus voluptates, odit beatae dolor asperiores facilis et rerum quasi, iure id quo! In iure voluptatum deserunt explicabo non, itaque provident distinctio sapiente? Exercitationem, labore magnam vero nulla blanditiis officiis!
+    Impedit, nisi repudiandae veritatis dolores eos iste, explicabo, velit error animi totam omnis architecto veniam? Maxime distinctio amet expedita molestiae cum modi similique, aspernatur in debitis nesciunt ad nisi temporibus!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum odit cum, rem suscipit ex earum facilis dignissimos autem sequi obcaecati assumenda nemo nulla sit quibusdam modi sed accusamus impedit. Assumenda.
+    Optio culpa molestias dignissimos reiciendis ipsam esse aspernatur ex dicta repudiandae, ratione incidunt fuga totam ut cupiditate? Recusandae ratione veritatis assumenda in, blanditiis est voluptatibus pariatur sequi eum ducimus vitae?
+    Accusamus voluptates, odit beatae dolor asperiores facilis et rerum quasi, iure id quo! In iure voluptatum deserunt explicabo non, itaque provident distinctio sapiente? Exercitationem, labore magnam vero nulla blanditiis officiis!
+    Impedit, nisi repudiandae veritatis dolores eos iste, explicabo, velit error animi totam omnis architecto veniam? Maxime distinctio amet expedita molestiae cum modi similique, aspernatur in debitis nesciunt ad nisi temporibus!</p>
 </body>
 </html>
